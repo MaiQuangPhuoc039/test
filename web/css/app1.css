@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* body{
+    background-image: url('../images/background1.jpg.crdownload')  ;
+    background-size: cover;
+    background-position-y: -100; 
+} */
+.container{
+    max-width: 1060px;
+    max-height: 60px;
+    margin: 0px auto;
+}
+#header{
+    background-color:#1f1f1f;
+    margin: 0px auto;
+    height: 60px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo{
+    padding: 5px 0px 5px 90px;
+
+}
+#logo img{
+    max-width: 50px;
+    height: auto;
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu li a {
+    color: rgb(225, 219, 219);
+    display: block;
+    text-decoration: none;
+    padding: 19px 15px;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.95s cubic-bezier(0.075, 0.82, 0.165, 1);  
+}
+#main-menu li:hover>a::before{
+     
+    width: 100%;
+} 
+#main-menu ul.sub-menu{
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #1f1f1f;
+    width: 160px;
+    padding: 10px 0px;
+    left: 0px;
+    border-top: none;
+    border :1px solid rgb(70, 59, 59);
+}
+#main-menu li:hover> ul.sub-menu{
+    display: block  ;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(116, 75, 75);
+}
+#main-menu ul.sub-menu li:hover>a{
+    border-bottom: 1px solid rgb(185, 94, 94);
+    color: rgb(201, 142, 142);
+}
+#main-menu ul.sub-menu li:last-child a{
+    border-top: 1px solid rgb(116, 75, 75);
+    border-bottom: none;
+}
+#main-menu ul.sub-menu .sub-menu{
+    left: 160px;
+    top: -11px;
+}
+#main-menu>li.has-child:after{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 900;
+    content: "\f107";
+    color:aliceblue;
+    position: absolute;
+    top: 4px;
+    right: -1px;
+    padding: 18px  0px;
+
+}
+#main-menu .sub-menu>li.has-child:after{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 900;
+    content: "\f105";
+    color:aliceblue;
+    position: absolute;
+    top: -8px;
+    right: 20px;
+    padding: 18px  0px;
+
+}
+#main{
+    padding-top: 60px;
+     margin: 0;
+     padding-left: 90px;
+     display: flex;
+}
+#main aside{
+    width: 300px;
+    height: 300px;
+}
+#main ul.sub-menu {
+    list-style: none;
+
+}
+#main ul.sub-menu li{
+    padding: 13px 10px 13px 35px;
+    border-radius: 7px ;
+    width: 85px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 29px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:#1f1f1f;
+    color: rgb(225, 219, 219);
+}
+#main section{
+    /* border: 1px solid ; */
+    width: 1100px;
+   
+    height: 300px;
+}
+
+#main section #products{
+    display: flex;
+}
+#main section #products #product_item{
+   max-width: 200px;
+    height: auto;
+    margin: 0px 5px;
+    border: 1px solid #e9d6d6;
+}
+#main section #products #product_item img{
+    width: 200px;
+    height: 180px;
+}
+ 
+#main section   #product_item .infor{
+    padding:2px 15px;
+    border-top: 1px solid rgb(219, 210, 212);
+}
+#main section   #product_item .infor p{
+     font-weight: bold;
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+}
+#main section p.price{
+    color: rgb(208, 68, 68);
+}
+
+
+
+.lienhe{
+    margin-left: 200px;
+    background-color: #f9f4f4;
+    width: 1200px;
+    margin-top: 30px;
+    display: flex;
+   }
+   .chat{
+    width: 380px;
+    margin: 5px  44px;
+   
+   }
+   .chat img{
+    width: 30px;
+    height: 30px;
+   }
+   .chat li:hover{
+    color:blue;
+   }
+   
+   .chat ul{
+    list-style: none;
+    margin-left: -20px;
+   }
+   .chatitem {
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 10px;
+    font-family: Arial;
+    font-size: 140%;
+   }
+    
+   .chat li{
+    margin-top: 10px;
+   }
+   .mxh{
+    display: flex;
+    height: 30px;
+    margin-left: 20px;
+   }
+   .mxh p{
+    margin-top: 5px;
+    margin-left: 10px;
+   }
+   
+   .dt{
+    padding-top: 10px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 120%;
+    color: rgb(29, 18, 18);
+   }
+   .sdt span{
+    color: rgb(0, 0, 255)
+   }
+   .std:hover{
+    color: red;
+   }
+   .sdt{
+    font-weight: bold;
+   }
+   
+   
