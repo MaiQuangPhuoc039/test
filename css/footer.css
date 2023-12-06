@@ -1,0 +1,412 @@
+
+ /* footer lien he  */
+ footer{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+  border-top: 1px solid pink;
+ }
+ .camket{
+  width: 100%;
+  margin: 60px 0px;
+  height: 90px;
+  background-color: white;
+  color: #56566b;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+ 
+.camket ul{
+  display: flex;
+  max-width: 80%;
+  justify-content: space-around;
+  margin: auto;
+}
+.camket li{
+  font-size: 100%;
+  list-style:none;
+  width: 32%;
+}
+.camketitem{
+  margin: 0px 10px ;
+  width: 100%;
+   display: flex; 
+}
+ 
+.camket p{
+  font-weight: bold;
+  margin-left: 0px;
+  font-size: 120%;
+  display: block;
+  align-items: center;
+  margin: auto 10px;
+  padding: 0;
+
+
+}
+
+.camketitem i{
+  color: #56566b;
+  font-weight: bold;
+  font-size: 470%;
+}
+/* end camket  */
+
+
+ .support{
+    background-color: #02120154;
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    padding: 20px 0px 20px 0px ;
+    height: auto; 
+    justify-content: center;
+    overflow: hidden;
+    bottom: 0;
+   }
+   .chat{
+    width: 30%;
+    margin: 0px 0px 0px 10%;
+
+   height: auto;
+   }
+   .chat ul{
+    list-style: none;
+     justify-content: center;
+   }
+   .chat li{
+    margin: 10px 0px ;
+    padding: 0px 0px 0px 10px;
+    justify-content: centers;
+   }
+   .chatitem {
+    font-weight: bold;
+    margin: 0;
+    font-family: Arial;
+    font-size: 140%;
+   }
+   
+   .chat img{
+    width: 30px;
+    height: 30px;
+   }
+   .chat li:hover{
+    color:blue;
+   }
+   
+   
+   
+    
+     
+   .mxh{
+    display: flex;
+    height: 30px;
+    
+   }
+   #app li{
+    display: flex;
+    align-items: center;
+   }
+   #app p{
+    padding-left: 10px;
+   }
+   
+    .mxh img {
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    }
+   
+   .dt{
+    padding-top: 10px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 120%;
+     
+    
+   } 
+    #hotline p{
+    color: red;
+    font-weight: bold;
+   }
+   #hotline p span{
+     color: blue;
+   }
+   
+   .dt i{
+     color: rgb(255, 0, 0);     
+   }
+   .sdt span{
+    color: rgb(0, 0, 255)
+   }
+   .std:hover{
+    color: red;
+   }
+   .sdt{
+    font-weight: bold;
+    color: rgb(17, 16, 16); 
+   }
+   #footer li{
+    cursor: pointer;
+    color: rgb(27, 24, 24);
+   }
+
+   @media (max-width: 1024px) {
+    footer{
+      width: 100%;
+      overflow: hidden;
+     }
+     .camket{
+      width: 100%;
+      height: auto;
+      justify-content: center;
+     }
+     .camketitem{
+      display: block;
+      width: 100%;
+     }
+     .camket li{
+      display: block;
+      text-align: center;
+     }
+     .camket p{
+      font-size: 100%;
+      margin: 10px 0px 0px 0px ;
+     }
+     .camketitem i{
+      font-size: 330%;
+     }
+     .chat{
+      margin: 0px 0px 0px 10px;
+     }
+     .support .chatitem{
+      font-size: 120%;
+     }
+   }
+
+   @media (max-width: 768px) {
+    footer{
+      width: 100%;
+      overflow: hidden;
+     }
+     .camket li{
+      display: block;
+      text-align: center;
+     }
+     .camket p{
+      font-size: 90%;
+      margin: 10px 0px 0px 0px ;
+     }
+     .camketitem i{
+      font-size: 300%;
+     }
+     .support{
+      position: relative;
+      height: 330px;
+     }
+     .chat{
+      width: 40%;
+      margin: 0px 20px 0px 20px;
+     }
+     .support .chatitem{
+      font-size: 120%;
+      margin: 10px 0px ;
+     }
+     #app{
+      position: absolute;
+      bottom: 0;
+     }
+     #app ul{
+      display: flex;
+     }
+     #app li{
+      width: 20%;
+     }
+     #app  p{
+      display: none;
+     }
+     .mxh img {
+      border-radius:30%;
+      -moz-border-radius:30%;
+      -webkit-border-radius:30%;
+      }
+   
+   }
+
+   @media (max-width: 650px) {
+    footer{
+       width: 100%;
+     }
+     .camket{
+      display: none;
+     }
+     .support{
+      position: relative;
+      display: block;
+      margin: 0px 0px 0px 0px ;
+      height: 600px;
+     }
+     .chat{
+      width: 90%;
+      padding: 20px;
+      margin-bottom: 0px;
+     }
+    .chat li{
+      padding: 0;
+    }
+     #app {
+      padding: 0;
+      display: block;
+      position: absolute;
+      bottom: 8%;
+     }
+      
+   }
+
+   @media (max-width: 350px) {
+      .support{
+        margin-bottom: 40px;
+      }
+   }
+
+/* 
+   @media screen and (max-width: 380px){
+    .camket{
+      display: none;
+    }
+    .support{
+      max-width: 100%;
+      display: block;
+       height: auto;  
+      background-color: #504c4c24;
+      margin: 50px 0px -43px 0px;
+      padding: 0px 0px 583px 0px;
+      justify-content: center;
+      height: 110px;
+      overflow: hidden;
+     }
+     .chatitem{
+      padding-left: 70px;
+      margin-left: 0px;
+     }
+    .chat{
+    width: 100%;
+   margin: 0px;
+   padding: 0px;
+   }
+   
+   #app ul {
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    margin-left: -16px;
+   }
+   .chat img{
+    width: 30px;
+    height: 30px;
+   }
+   .chat ul{
+    list-style: none;
+    margin-left: 20px;
+    
+   }
+   .chatitem {
+    font-weight: bold;
+    margin-left: -51px;
+    margin-top: 40px;
+    font-family: Arial;
+    font-size: 21px;
+   }
+   .chat li{
+    font-size: 15px;
+   }
+    
+    
+   .mxh{
+    display: flex;  
+    height: 30px;
+   }
+   .mxh p{
+    display: none;
+   }
+  
+   
+     
+   }
+
+
+   @media screen and (max-width: 768px){
+    
+   
+   
+    .camket{
+     display: flex;
+     max-width: 100%;
+     margin:15px 0px;
+     height: 90px;
+     overflow: hidden;
+   }
+   .camket ul{
+     display: flex; 
+     max-width: 100%;
+     margin: 0px;
+     padding: 0px;
+   }
+  
+   .camket p{
+     font-weight: bold;
+     margin-left: 0px;
+     font-size: 80%;
+     height: 30px;
+     margin-top: 20px;
+     margin-left: 10px;
+   }
+   .camket li{
+     width: 30%;
+     margin: 13px ;
+   }
+   .camketitem i{
+     color: #56566b;
+     font-weight: bold;
+     font-size: 300%;
+   }
+   .support{
+     max-width: 100%;
+     padding: 0px;
+     display: flex;
+     margin: 0px 0px 190px 0px;
+     justify-content: center;
+     height: 250px;
+    }
+    .chat{
+     max-width: 100%;
+     margin: 5px  0px;
+     height: 200px;
+     margin: 10px;
+     padding: 0px;
+    }
+    .chatitem {
+     margin: 0px;
+     padding: 0px;
+      
+     margin-top: 10px;
+     font-family: Arial;
+     font-size: 120%;
+    }
+    .chat ul{
+     margin: 0px;
+     padding: 10px 0px;
+     
+    }
+    .chat li{
+     font-size: 80%;
+     margin: 10px;
+     padding: 0px;
+     width: 100%;
+    }
+    }
+
+
+  */
+   

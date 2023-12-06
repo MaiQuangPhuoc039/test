@@ -1,0 +1,240 @@
+body {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(203, 179, 179);
+  font-family: Arial;
+  max-width: 1502px;
+  overflow: hidden;
+}
+  
+header {
+  display: block;
+  padding:   0;
+  height: auto;
+  width: 100%;
+   
+}
+ .gioithieu {
+   height: 30px;
+   background-color: #eeeeee;
+   display: flex;
+   justify-content: space-between;
+   width: 88%;
+   text-align: center;
+   padding: 0px 147px ;
+ }
+ 
+ .gioithieu a {
+   text-decoration: none;
+   color: black;
+ }
+ 
+ .gioithieu a:hover {
+   color: red;
+ 
+ }
+ 
+ .gioithieu .tenweb {
+   font-weight: bold;
+   font-size: 130%;
+   margin-top: 3px;
+   color: rgb(15, 1, 1);
+ }
+ .tenweb span {
+   font-weight: normal;
+   font-size: 67%;
+   color:#4a3d3a;
+ }
+ 
+ .gioithieu .ship {
+   font-weight: normal;
+   text-align: right;
+   margin-left: 300px;
+   font-family: initial;
+   margin-top : 8px;
+ }
+ .ship i{
+   color: rgb(241, 14, 14);
+ }
+ 
+ 
+ .thaotac {
+   display: flex;
+   margin: 10px 10%;
+   height: 120px;
+ 
+ }
+ 
+ .thaotac img {
+   width: 80px;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ 
+ .thaotac .web {
+   display: flex;
+ }
+ .thaotac img{
+   padding-top: 20px;
+ }
+ .thaotac .p1{
+  color:rgb(15, 1, 1);
+  font-size: 200%;
+  padding-left: 10px;
+  padding-top:0;
+  font-weight: bold;
+ }
+ 
+ .thaotac .lam {
+   display: flex;
+   margin: 10px 0 10px 300px;
+ }
+ .lam i{
+   color: #a29298;
+   height: 30px;
+   font-size: 110%;
+   margin-left: 15px;
+   margin-top: 3px;
+ }
+ 
+ /* .nhaptimkiem:hover .nuttimkiem{
+  border: 2px solid black;
+  border-left: none;
+  margin-top: -1px;
+  height: 23px;
+ }
+ .nhaptimkiem:hover {
+  border: 1px solid red;
+ }
+ */
+ .timkiem {
+  height: 44px;
+  width: 327px;
+  margin-top: 23px;
+  border: 1px solid pink;
+  border-radius: 5px;
+  display: flex;
+ 
+ }
+ .nhaptimkiem{
+   height: 23px;
+   width: 237px;
+   font-size: 110%;
+   border: none;
+   margin: 0;
+   padding: 10px;
+   
+ }
+ .nuttimkiem{
+  width: 49px;
+  border: none;
+  height: 24px;
+  font-size: 110%;
+  margin-left: 1px;
+  margin-top: 0px;
+  padding: 10px;
+  background-color: #e5e5e5;
+ }
+ 
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ .lam1 {
+   
+   margin-left: 30px;
+   height: 40px;
+    
+   margin-top: 25px;
+   font-weight: bold;
+   font-family: initial;
+   font-size: 110%;
+   width: 400px;
+  }
+  #bras{
+   display: none;
+   
+  }
+ 
+ #icon{
+  margin-left: 30px;
+  margin-top: -5px;
+  color: red;
+  font-weight: bold;
+  padding-right: 10px;
+  font-size: 150%;
+ 
+ 
+ }
+ .login{
+  padding-top: 3px;
+ }
+ 
+ 
+ /* end giới thiệu trang web */
+ 
+ /* start menu */
+ 
+ .menu {
+   background-color: #303030;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   border-bottom: 1px solid #303030;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   width: 100%;
+ }
+ 
+ 
+ .menu ul {
+   display: flex;
+   margin: 0px 20px;
+ }
+ 
+ #home{
+    font-size: 120%; 
+    margin-top: -4px;
+     margin-left: -90px;
+ }
+ #bor{
+     border-bottom: 3px solid pink;
+ }
+ .menu li {
+   height: 20px;
+   color: white;
+   font-size: 70%;
+   font-weight: bold;
+   padding: 15px 20px 3px 20px;
+   text-align: center;
+   margin-left: 60px;
+   border-bottom: 3px solid #303030;
+ 
+ }
+ .menu i:hover{
+   border-bottom:3px solid  #303030;
+ }
+ 
+ ul {
+   list-style: none;
+ }
+ 
+ 
+ .menucon:hover {
+   border-bottom: 3px solid white;
+   transition: 0.4s;
+ }
+  
+ /* end menu */
+  
+  
+  
+ 
+  
+ 
+  
+ 

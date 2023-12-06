@@ -1,0 +1,37 @@
+section{
+  width: 80%;
+}
+input[type=submit] {
+    width: 100px;
+   position: relative;
+     
+    background-color: #4CAF50; /* Tạo nút gửi đăng ký */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=reset] {
+    width: 100px;
+   position: relative;
+     
+    background-color: #4CAF50; /* Tạo nút gửi đăng ký */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #but{
+     
+      width: 200px; 
+  }
+   #ok {
+    justify-content: space-between;
+  }
+  #anh{
+     
+    text-align: left;
+    justify-content: flex-start;
+  }

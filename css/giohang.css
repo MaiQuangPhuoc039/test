@@ -1,0 +1,73 @@
+ #cart {
+     width: 90%;
+     margin: 100px 5%;
+     border: 1px solid pink;
+ }
+
+
+ #cart table {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ #cart tr {
+     border-bottom: 1px solid #ddd;
+     height: 50px;
+ }
+
+ #intro th {
+     text-align: center;
+     padding: 10px 10px;
+     font-size: large;
+     font-weight: normal;
+     background-color: rgb(73, 66, 66);
+     color: white;
+ }
+
+ #cart td {
+     text-align: center;
+ }
+
+ 
+
+ #tdimg {
+     width: 200px;
+ }
+
+ #tdimg img {
+     width: 100px;
+     height: 50px;
+     margin: 2px 0;
+ }
+ .th_count{
+    width: 250px;
+ }
+ #cart .count form{
+    text-align: center;
+    margin: auto;
+    /* height: 23px; */
+width: 150px;
+justify-content: space-around;
+    display: flex;
+ }
+ #cart .count input{
+    width: 70px;
+    border: 1px solid pink;
+    border-radius: 3px;
+ }
+#cart .act{
+    background-color: rgb(102, 97, 89);
+    color: white;
+    padding: 5px;
+    height: auto;
+}
+#cart .del{
+    width: 40px;
+}
+#cart .stt{
+    width: 40px;
+}
+#cart .sum_tal{
+    width: 140px;
+}
+ 
