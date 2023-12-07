@@ -50,7 +50,17 @@
                 <div id="work1" class="lam1">
 
                     <ul>
-                        <li><a href="#"><i id="icon" class="fa-solid fa-user"></i><span>Đăng nhập</span></a></li>
+
+                        <?php
+                        if (isset($tenND)) {
+                            echo ' </i><a href="../view/dangnhap.php"><i id="icon" class="fa-solid fa-user"></i><span style="border-radius:  20px; border: 1px solid pink ; background-color:  rgb(235, 227, 227);padding: 5px">' . $tenND . '</span></a></li>';
+                        } else {
+                            echo '<li><a href="#"><i id="icon" class="fa-solid fa-user"></i><span><php echo $tenND ;?></span></a></li>';
+                        }
+                        ?>
+
+                        <!-- <li><a href="#"><i id="icon" class="fa-solid fa-user"></i><span style="border-radius:  20px; border: 1px solid pink ; background-color:  rgb(235, 227, 227);padding: 5px" >Tên 1</span></a></li> -->
+
                         <li><a href="?action=giohang"><i id="icon" class="fa fa-bag-shopping"></i> </a><span class="login">Giỏ hàng </span></li>
                     </ul>
 
@@ -121,8 +131,8 @@
                     </div>
                     <div id="productinformation">
                         <p class="name"><?php echo $pro['productName']; ?></p>
-                        <div class="price"> 
-                            <p class="pricelast"><?php echo number_format(( $pro['listPrice'] - ($pro['listPrice']*$pro['giamgia'])/100   )); ?><span>VNĐ</span></p>
+                        <div class="price">
+                            <p class="pricelast"><?php echo number_format(($pro['listPrice'] - ($pro['listPrice'] * $pro['giamgia']) / 100)); ?><span>VNĐ</span></p>
                             <p class="pricefirst"><del><?php echo number_format($pro['listPrice']); ?><span>VND</span></del></p>
                             <p class="discount">-<?php echo $pro['giamgia']; ?>%</p>
 
@@ -138,7 +148,7 @@
                             <input type="hidden" name="category_id" value="<?php echo $pro['categoryID']; ?>">
                             <input type="hidden" name="hinh" value="<?php echo $pro['productImg']; ?>">
                             <input type="hidden" name="tensp" value="<?php echo $pro['productName']; ?>">
-                            <input type="hidden" name="giasp" value="<?php echo ( $pro['listPrice'] - ($pro['listPrice']*$pro['giamgia'])/100   ); ?>">
+                            <input type="hidden" name="giasp" value="<?php echo ($pro['listPrice'] - ($pro['listPrice'] * $pro['giamgia']) / 100); ?>">
                             <input class="num" name="soluong" type="number" min="1" value="1">
 
                             <div id="infform">
@@ -199,9 +209,9 @@
                                             <input type="hidden" name="action" value="detail_product" />
                                             <input type="hidden" name="product_id" value="<?php echo $pros['productID']; ?>">
                                             <input type="hidden" name="category_id" value="<?php echo $pros['categoryID']; ?>">
-                                            <img id="inf_img" src="../images/<?php echo $pros['productImg'];?>" alt="">
+                                            <img id="inf_img" src="../images/<?php echo $pros['productImg']; ?>" alt="">
                                             <div id="infpro_by_catid">
-                                            <p class="product_name"><?php echo $pros['productName']; ?></p>
+                                                <p class="product_name"><?php echo $pros['productName']; ?></p>
                                                 <input id="sub" type="submit" value="xem chi tiết ">
                                             </div>
                                         </form>

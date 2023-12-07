@@ -73,7 +73,15 @@
                                         </form>
 
                                     </div>
-                                </i><a href="#"><span>Đăng nhập</span></a></li>
+                                    <?php
+                                     if (isset($tenND)) {
+                                        echo ' </i><a href="../view/dangnhap.php"><span style="border-radius:  20px; border: 1px solid pink ; background-color:  rgb(235, 227, 227);padding: 5px" >' . $tenND . '</span></a></li>';
+                                    }
+                                    else{
+                                        echo '</i><a href="../view/dangnhap.php"><span>Đăng nhập</span></a></li>';
+                                    }
+                                    ?>
+                                <!-- </i><a href="../view/dangnhap.php"><span>Đăng nhập</span></a></li> -->
                             <li><a href="?action=giohang"><i id="icon" class="fa fa-bag-shopping"></i> </a><span class="login">Giỏ hàng </span></li>
                         </ul>
 
@@ -320,7 +328,7 @@
                             <a href="?action=khuyenmai"><img src="../images/km1.webp" alt=""></a>
                             <a href="?action=khuyenmai"><img src="../images/km5.webp" alt=""></a>
                             <a href="?action=khuyenmai"><img src="https://bizweb.dktcdn.net/100/350/142/files/dao-thai-thitnhat-ban-cao-cap-1.jpg?v=1701165130670" alt=""></a>
-                            
+
                         </div>
                         <form action="">
                             <input id="seeall1" type="submit" value="Xem tất cả >> ">
@@ -329,7 +337,7 @@
                     <!-- end new product  -->
 
 
-                    
+
 
 
 

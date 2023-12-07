@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+// session_start();
 if (!isset($_SESSION['giohang'])) $_SESSION['giohang'] = [];
 if (isset($_GET['delcart']) && ($_GET['delcart'] == 1)) unset($_SESSION['giohang']);
 if (isset($_GET['delid']) && ($_GET['delid'] >= 0)) {

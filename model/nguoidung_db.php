@@ -14,6 +14,22 @@
         return $statememt;
     }
 
+      // get tenCatItem
+      function get_tenND($maND) {
+        global $db;
+        $query = 'SELECT * FROM nguoidung
+                  WHERE maND = :maND';    
+        $statement = $db->prepare($query);
+        $statement->bindValue(':maND', $maND);
+        $statement->execute();    
+        $category = $statement->fetch();
+        $statement->closeCursor();    
+        $tenND = $category['tenND'];
+        return $tenND;
+    }
+
+    
+
     function get_nguoidung_by_maND($ma_nd){
         global $db;
         $query ='SELECT * FROM  nguoidung
@@ -24,6 +40,36 @@
         $nguoidung = $statement-> fetchAll();
         $statement->closeCursor();
         return $nguoidung;
+    }
+
+    function get_nguoidung_loginPQ($taikhoan,$matkhau){
+        global $db;
+        $query ="SELECT *
+        FROM nguoidung
+        INNER JOIN phanquyen ON nguoidung.maPQ = phanquyen.maPQ
+        WHERE nguoidung.taikhoan = :taikhoan AND nguoidung.matkhau = :matkhau
+        ";
+        $statement = $db -> prepare($query);
+        $statement -> bindValue(':taikhoan', $taikhoan);
+        $statement -> bindValue(':matkhau', $matkhau);
+        $statement->execute();
+        $nguoidungPQ = $statement-> fetch();
+        $statement->closeCursor();
+        return $nguoidungPQ;
+    }
+
+    //login 
+    function login($taikhoan,$matkhau){
+        global $db;
+        $query ='SELECT * FROM  nguoidung
+                 WHERE taikhoan = :taikhoan AND matkhau = :matkhau '   ;
+        $statement = $db -> prepare($query);
+        $statement -> bindValue(':taikhoan', $taikhoan);
+        $statement -> bindValue(':matkhau', $matkhau);
+        $statement->execute();
+        $nguoidunglogin = $statement-> fetch();
+        $statement->closeCursor();
+        return $nguoidunglogin;
     }
     
     function add_nguoidung($ho_nd,$ten_nd,$diachi_nd,$email_nd,$sdt,$gioitinh_nd,$taikhoan_nd,$matkhau_nd,$ma_pq){
